@@ -28,3 +28,14 @@ Para que se ejecuten los dos hilos con sus variables basta con crear una puerta 
 
 # Pregunta 3 
 
+Es dificil hacer que el hijo siempre espere al padre sin usar el sleep() dado que el SO (en mi caso) actua de manera aleatoria al seleccionar uno u otro pero es posible y se hace visible cuando se ejecuta y se ve que como el proceso del padre ya termino al buscar su pid con la funcion getppid() arroja un valor distinto al del padre original por lo que dice que dicho proceso ya finalizo su ejecucion.
+
+# Pregunta 4
+
+1.  La utilización del CPU debe ser del 100%. Existen dos procesos y cada uno de ellos tendrá un 100% de uso del CPU. Se ejecutan en el orden indicado y no hay un intervalo de tiempo entre los dos procesos
+
+2.  Necesita diez puntos de tiempo para completar los dos procesos
+
+# Pregunta 5
+
+
