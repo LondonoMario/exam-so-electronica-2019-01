@@ -3,16 +3,25 @@
 
 
 # Pregunta 1
-## Utilice la libreria time.h la cual permite ver el tiempo "real" que toma cada ejecucion
-## Se tomaron valores de multiplos de 10 empezando por 100, el segundo 1000 y asi sucesivamente
-## Cuyos tiempos fueron (S=segundos) 
-## 100 - 0.000170 S - Se elimina
-## 1000 - 0.000178 S
-## 10000 - 0.000232 S
-## 100000 - 0.000811 S
-## 1000000 - 0.006863 S - Se elimina
-## En general los tiempos van en aumento dado que cada hilo de ejecucion toma un tiempo ejecutando la funcion worker y este tiempo va incrementando mientras las instrucciones de ejecucion entran, abren la puerta, cierran la puerta, se ejecuta la funcion worker, abren la puerta y salen. Y mientras el valor insertado aumenta este programa tardara mas tiempo en ejecutarse
+Utilice la libreria time.h la cual permite ver el tiempo "real" que toma cada ejecucion
+## Utilizando la puerta por fuera del for{}
+tiempos (Con un argumento de 100000): 
 
+- 0.001364 - descartado segun la guia
+- 0.002568
+- 0.002518
+- 0.002579
+- 0.002551 - descartado segun la guia
+
+## Utilizando la puerta por dentro del fork{}
+tiempos (Con un argumento de 100000):
+- 0.053656 - descartado segun la guia
+- 0.055766 
+- 0.046694
+- 0.051743
+- 0.039906 - descartado segun la guia
+
+El programa se demora mas dado que va a estar constantemente abriendo y cerrando la puerta lo que conduce a que cuando esta en el ciclo utilice un tiempo para abrir y cerrar y este tiempo se va a ir sumando hasta que el ciclo se detenga cosa que cuando esta por fuera no sucede dado que entra hace su ejecucion y vuelve a salir solo una vez
 
 # Pregunta 2
 ##
