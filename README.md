@@ -26,5 +26,5 @@ El programa se demora mas dado que va a estar constantemente abriendo y cerrando
 # Pregunta 2
 Para que se ejecuten los dos hilos con sus variables basta con crear una puerta ya que cada hilo tiene su propia ejecucion entonces cuando uno modifica la variable v el otro esperara esta modificacion y luego la usara pero para que esto no suceda al mismo tiempo se usa la puerta
 
-#Pregunta 3 
+# Pregunta 3 
 
