@@ -1,4 +1,3 @@
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "common.h"
@@ -14,20 +13,26 @@
 #define destruir_puerta(m) pthread_mutex_destroy(&m)//funcion para destruir puerta
 #endif
 
-int v;
+float v;
+puerta p3;
 void *divi(void *arg){
+	cerrar_puerta(p3);
 	float y=350;
 	float z=25;
-	float v=y/z;
-	printf("Value of v: %f",v);
-	return v;
+	v=y/z;
+	printf("Value of v: %f \n",v);
+	abrir_puerta(p3);
+//	return v;
 }
 
 void *multi(void *arg){
+//	cerrar_puerta(p3);
+	sleep(2);
 	float x=1250;
-	float v=v*x;
-	printf("Value of v: %f",v);
-	return v;
+	v=v*x;
+	printf("Value of v: %f \n",v);
+//	abrir_puerta(p3);
+//	return v;
 }
 
 int main(){
