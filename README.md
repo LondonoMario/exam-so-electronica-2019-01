@@ -24,5 +24,7 @@ tiempos (Con un argumento de 100000):
 El programa se demora mas dado que va a estar constantemente abriendo y cerrando la puerta lo que conduce a que cuando esta en el ciclo utilice un tiempo para abrir y cerrar y este tiempo se va a ir sumando hasta que el ciclo se detenga cosa que cuando esta por fuera no sucede dado que entra hace su ejecucion y vuelve a salir solo una vez
 
 # Pregunta 2
-##
+Para que se ejecuten los dos hilos con sus variables basta con crear una puerta ya que cada hilo tiene su propia ejecucion entonces cuando uno modifica la variable v el otro esperara esta modificacion y luego la usara pero para que esto no suceda al mismo tiempo se usa la puerta
+
+#Pregunta 3 
 
