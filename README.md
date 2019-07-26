@@ -38,4 +38,4 @@ Es dificil hacer que el hijo siempre espere al padre sin usar el sleep() dado qu
 
 # Pregunta 5
 
-
+El programa buscara los ejecutables en /usr/sbin, /usr/loca/sbin a no ser que le indiquemos una ruta especifica
